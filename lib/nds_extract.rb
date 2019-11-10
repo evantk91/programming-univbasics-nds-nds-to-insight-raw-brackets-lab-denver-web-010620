@@ -19,18 +19,16 @@ def directors_totals(nds)
     director = director_hash[:name]
     movies = director_hash[:movies]
     
-    pp director
-    pp movies
-    #total = 0 
-    #movie_idx = 0
+    total = 0 
+    movie_idx = 0
     
-    #while movies_idx < movies.length do
-      #movie = movies[movie_idx]
-      #total += movie[:worldwide_gross]
-      #movie_idx += 1 
-    #end
+    while movies_idx < movies.length do
+      movie = movies[movie_idx]
+      total += movie[:worldwide_gross]
+      movie_idx += 1 
+    end
     
-    #was result[director] = total
+    result[director] = total
     
     director_index += 1 
   end
