@@ -22,7 +22,7 @@ def directors_totals(nds)
     total = 0 
     movie_idx = 0
     
-    while movies_idx < movies.length do
+    while movie_idx < movies.length do
       movie = movies[movie_idx]
       total += movie[:worldwide_gross]
       movie_idx += 1 
